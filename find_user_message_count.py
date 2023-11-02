@@ -1,4 +1,4 @@
-from read_data import read_data
+from read_data import read_data as uqish 
 from find_all_users_id import find_all_users_id
 
 def find_user_message_count(data: dict, users_id: str)->dict:
@@ -11,4 +11,6 @@ def find_user_message_count(data: dict, users_id: str)->dict:
     Returns:
         dict: Number of messages of the users
     """
-    return
+    return 
+a=uqish('data/result.json')
+print(find_user_message_count(a,us_id(a)))

@@ -1,4 +1,4 @@
-from read_data import read_data
+from read_data import read_data as uqish
 
 def find_all_users_id(data: dict)->list:
     """ 
@@ -9,4 +9,9 @@ def find_all_users_id(data: dict)->list:
     Returns:
         list: List containing all the users id
     """
-    return
+    l=[]
+    for i in data['messages']:
+        l.append(i['id'])
+    return set(l) 
+print(find_all_users_id(uqish('data/result.json')))
+    

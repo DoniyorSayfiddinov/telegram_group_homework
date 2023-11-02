@@ -1,4 +1,4 @@
-from read_data import read_data
+from read_data import read_data as uqish
 
 def find_number_of_messages(data: dict)->int:
     """
@@ -10,4 +10,5 @@ def find_number_of_messages(data: dict)->int:
         int: Total number of messages.
     
     """
-    return
+    return  len(data['messages'])
+print(find_number_of_messages(uqish('data/result.json')))
